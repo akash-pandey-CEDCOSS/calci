@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom-JavaScript -->
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="row justify-content-center mt-5" id="">
+        <div class="col-md-4" id="">
+            <div class="container border shadow">
+
+
+                <div class="row border">
+                    <div class="col-md-12 mt-3 mb-3">
+                        <input type="text" class="form-control answer" disabled id="displayCalc">
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block text-danger" onclick="clears()">
+                                    C
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block text-danger" onclick="del()">
+                                    DEL
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block disabled" onclick="myfunction()">
+                                    ( )
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block calc" onclick="dis1('*')">
+                                    *
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block " onclick="dis('7')">
+                                    7
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block "  onclick="dis('8')">
+                                    8
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block"  onclick="dis('9')">
+                                    9
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block" id="div" onclick="dis1('/')">
+                                    /
+
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="row">
+
+
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block" onclick="dis('4')">
+                                    4
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block" onclick="dis('5')">
+                                    5
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block" onclick="dis(6)">
+                                    6
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block" onclick="dis1('-')">
+                                    -
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="row">
+
+
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block " onclick="dis('1')">
+                                    1
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block " onclick="dis('2')">
+                                    2
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block " onclick="dis('3')">
+                                    3
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block " onclick="dis1('+')">
+                                    +
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12 mb-3">
+                        <div class="row">
+
+
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block disabled" id="#"
+                                    onClick="myfunction()">
+                                    +/-
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block" onclick="dis('0')">
+                                    0
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block" onclick="dis('.')">
+                                    .
+                                </button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button type="button" class="btn btn-block btn-success " id="equal"
+                                    onClick="dis1('=')">
+                                    =
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
